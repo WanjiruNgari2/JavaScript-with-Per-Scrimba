@@ -64,4 +64,3 @@ I plan to continue expanding my JavaScript foundation by building independent pr
   and later exploring frameworks such as React to strengthen my frontend development skills.
 I plan to continue expanding my JavaScript foundation by building independent projects, experimenting with APIs, and later exploring frameworks such as React to strengthen my frontend development skills.
 
-Would you like me to create a matching repo description (the short summary under your repo name) and a one-line tagline for your GitHub repo card too? (That’s what appears on your profile grid.)
