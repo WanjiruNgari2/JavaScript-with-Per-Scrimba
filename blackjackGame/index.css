@@ -1,0 +1,41 @@
+body{
+    background-color:#016f32;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    color: goldenrod;
+}
+
+p{
+    color: white;
+}
+#message-el{
+    font-style: italic;
+}
+/* style the button with:
+textcolor: #016f32
+width: 150px
+backbround: goldenrod
+ */
+
+
+button {
+    color: #016f32;
+    width: 150px;
+    background-color: goldenrod;
+    padding-bottom:5px;
+    padding-top: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 1px;
+
+    
+}
+
+/* ensure buttons start Game and New 
+Card have some space btwn each other and they are rendered vertically*/
+#new-card{
+    margin-bottom: 2px;
+}
