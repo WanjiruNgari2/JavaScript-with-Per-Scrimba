@@ -19,12 +19,24 @@ let secondCard = 0
 let sum = 0
 let hasBlackJack = false
 let isAlive = false
-let message = ""
+let message = " "
+
+// let messageEL = document.getElementById("message-el")
+// let sumEl = document.querySelector("#sum-el")
+// let cardsEL= document.querySelector(".cards-el")
+
+// let hasCompletedCourse = true
+// let givesCertificate = true
 
 
-let messageEL = document.getElementById("message-el")
-let sumEl = document.querySelector("#sum-el")
-let cardsEL= document.querySelector(".cards-el")
+// if (hasCompletedCourse && givesCertificate === true ) {
+//     generateCert()
+// }
+
+// function generateCert() {
+//     console.log("Generating Cert!...");
+    
+// }
 
 
 function startGame() {
@@ -32,7 +44,7 @@ function startGame() {
     let secondCard = getRandomCard()
     isAlive = true
     sum = firstCard + secondCard
-    allCards = [firstCard + secondCard]
+    allCards = [firstCard, secondCard]
 
     renderGame()
 }
@@ -71,12 +83,17 @@ function renderGame(){
 }
 
 function newCard() {
-    let newCard = getRandomCard()
-    sum += newCard 
-    allCards.push(newCard)
-    console.log(allCards);
-    
-    renderGame()
+    // only allow the player to get a new card if she is alive 
+    //  and doesn't have BlackJack
+
+    if(isAlive === True && hasBlackJack === false ){
+        let newCard = getRandomCard()
+        sum += newCard 
+        allCards.push(newCard)
+        console.log(allCards);
+
+        renderGame()
+        }
     
 }
 
@@ -104,8 +121,6 @@ function getRandomCard() {
 // format : "sum: 20"
 
 //8. display the cards the user inputs using format "cards: 10 4"
-
-
 // 9.create a new card btn, create a newCard func, style it in css
 
 
@@ -119,7 +134,6 @@ function getRandomCard() {
         // function startGame() {
         //     renderGame()
         // }
-
 
 // 12.create an array that will store all the cards called allCards
 // then push the new Card to the allCards array so it will also be displayed
@@ -139,3 +153,5 @@ function getRandomCard() {
 
 //16.LASTLY AND FINALLY, change allvariables to 0 at the beginning of the game
     // then initialize them in function startGame()
+
+

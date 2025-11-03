@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <script src="obj.js"></script>
+        <h1>Blackjack</h1>
+        <p id="message-el">Want to play a round?</p> 
+        <!-- create an class/id for cards paragraph: cards-el let it display the cards selected-->
+        <p class="cards-el">Cards:</p>
+
+        <!-- let sum paragraph have an id, and let it display the sum of cards selected  -->
+        <p id="sum-el" >Sum:</p> 
+
+        <!-- Create a button to start game that calls the function
+            startGame() when clicked  -->
+        <button id="start-game" onclick="startGame()">START GAME</button>
+        
+        <!-- create a new card btn that calls newCard func when clicked.
+          style it in css -->
+        <p><button id="new-card" onclick="newCard()">NEW CARD</button></p>
+        <p id="score-el" >Shane: $143</p>
+       
+        
+    </body>
+</html>
