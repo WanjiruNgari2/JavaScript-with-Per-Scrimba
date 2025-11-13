@@ -95,4 +95,33 @@ console.log(largeCoutnries);//[ 'China', 'India', 'USA', 'Indonesia', 'Pakistan'
 
 // quiz6: ROCK PAPER SCISSORS: 4:28:46
 // create a func that returns a random item from the arr
+let hands = ["rock", "paper", "scissors"]
 
+function playHand() {
+    let randomIndex = Math.floor(Math.random() * 3)//0,1,2,
+    return hands[randomIndex]//paper, rock or scissor
+
+}
+console.log(playHand()); 
+
+// QUIZ 7:
+// Create a func that puts the apples onto the apple shelf 
+// and the oranges into the orange shelf. use a for loop,
+//  a conditional statement, and the textContent property
+
+
+let fruits = ["🍎", "🍊", "🍎", "🍊", "🍎", "🍊", "🍎"]
+let appleShelf = document.getElementById("apple-Shelf")
+let orangeShelf = document.getElementById("orange-Shelf")
+
+function putFruits() {
+    for(let i = 0; i < fruits.length; i++) {
+        if (fruit[i] === "🍎") {
+            appleShelf.textContent += "🍎"
+        } else if (fruit === "🍊") {
+            orangeShelf.textContent += "🍊"
+        }
+    }
+}
+
+putFruits() //you have all fruits in various divshelfs.
